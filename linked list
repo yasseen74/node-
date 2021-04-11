@@ -1,0 +1,19 @@
+#include <iostream>
+class Node {
+public:
+	int data;
+	Node* next;
+};
+using namespace std;
+int main() {
+	cout << "Enter Your Age " << endl;
+	int x = 0;
+		cin >> x;
+	Node *fr = new Node();
+	fr->data = x;	
+	Node* Sec = new Node();
+	fr->next = Sec;
+	Sec->data = x*2;
+	cout << fr->next->data << endl;
+	return 0;
+}
