@@ -1,0 +1,120 @@
+#include <iostream>
+class Node {
+public:
+	int data;
+	Node* next;
+};
+using namespace std;
+int main() {
+	//Y 
+	Node *Y1 = new Node();
+	Y1->data = 1;	
+	Node* Y2 = new Node();
+	Y1->next = Y2;
+	Y2->data = 2;
+	Node* Y3 = new Node();
+	Y2->next = Y3;
+	Y3->data = 3;
+	Node* Y4 = new Node();
+	Y3->next = Y4;
+	Y4->data = 4;
+	//S
+	Node* S1 = new Node();
+	S1->data = 11;
+	Node* S2 = new Node();
+	S1->next = S2;
+	S2->data = 12;
+	Node* S3 = new Node();
+	S2->next = S3;
+	S3->data = 13;
+	Node* S4 = new Node();
+	S3->next = S4;
+	S4->data = 14;
+
+	//S
+	Node* S21 = new Node();
+	S21->data = 110;
+	Node* S22 = new Node();
+	S21->next = S22;
+	S22->data = 111;
+	Node* S23 = new Node();
+	S22->next = S23;
+	S23->data = 112;
+	Node* S24 = new Node();
+	S23->next = S24;
+	S24->data = 113;
+	//E
+	Node* E1 = new Node();
+	E1->data = 120;
+	Node* E2 = new Node();
+	E1->next = E2;
+	E2->data = 121;
+	Node* E3 = new Node();
+	E2->next = E3;
+	E3->data = 122;
+	Node* E4 = new Node();
+	E3->next = E4;
+	E4->data = 123;
+	Node* E5 = new Node();
+	E4->next = E5;
+	E5->data = 124;
+	Node* E6 = new Node();
+	E5->next = E6;
+	E6->data = 125;
+
+	//N
+	Node* N1 = new Node();
+	N1->data = 210;
+	Node* N2 = new Node();
+	N1->next = N2;
+	N2->data = 211;
+	Node* N3 = new Node();
+	N2->next = N3;
+	N3->data = 212;
+	Node* N4 = new Node();
+	N3->next = N4;
+	N4->data = 213;
+
+	Node* temp = 0;
+	temp = Y1->next;
+	cout << "Y = " << Y1->data << " ";
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl;
+
+	temp = S1->next;
+	cout << "S = " << S1->data << " ";
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl;
+
+	temp = S21->next;
+	cout << "S = " << S21->data << " ";
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl;
+
+	temp = E1->next;
+	cout << "E = " << E1->data << " ";
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl;
+
+	temp = N1->next;
+	cout << "N = " << N1->data << " ";
+	while (temp != NULL) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl;
+
+	return 0;
+}
